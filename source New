@@ -1,0 +1,966 @@
+local ScreenGui = Instance.new("ScreenGui")
+
+
+local main = Instance.new("Frame")
+
+
+local Titel = Instance.new("TextLabel")
+
+
+local Close = Instance.new("TextButton")
+
+
+local Teleport = Instance.new("TextLabel")
+
+
+local Spawn = Instance.new("TextButton")
+
+
+local Town = Instance.new("TextButton")
+
+
+local Forest = Instance.new("TextButton")
+
+
+local Mine = Instance.new("TextButton")
+
+
+local Beach = Instance.new("TextButton")
+
+
+local Winter = Instance.new("TextButton")
+
+
+local Shop = Instance.new("TextButton")
+
+
+local Glacier = Instance.new("TextButton")
+
+
+local Desert = Instance.new("TextButton")
+
+
+local Volcano = Instance.new("TextButton")
+
+
+local Tech = Instance.new("TextButton")
+
+
+local Cave = Instance.new("TextButton")
+
+
+local Vip = Instance.new("TextButton")
+
+
+local Open = Instance.new("TextButton")
+
+
+
+--Properties:
+
+
+
+ScreenGui.Parent = game.CoreGui
+
+
+
+main.Name = "main"
+
+
+main.Parent = ScreenGui
+
+
+main.Active = true
+
+
+main.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+
+
+main.Position = UDim2.new(0.775130332, 0, 0.246625766, 0)
+
+
+main.Size = UDim2.new(0, 264, 0, 576)
+
+
+main.Active = true
+
+
+main.Draggable = true
+
+
+
+Titel.Name = "Titel"
+
+
+Titel.Parent = main
+
+
+Titel.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+
+
+Titel.Size = UDim2.new(0, 246, 0, 15)
+
+
+Titel.Font = Enum.Font.Ubuntu
+
+
+Titel.Text = "Pet Simulator V 1.00 || Bebedi#9960"
+
+
+Titel.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+
+Titel.TextSize = 14.000
+
+
+
+Close.Name = "Close"
+
+
+Close.Parent = main
+
+
+Close.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+
+
+Close.Position = UDim2.new(0.931818187, 0, 0, 0)
+
+
+Close.Size = UDim2.new(0, 18, 0, 15)
+
+
+Close.Font = Enum.Font.TitilliumWeb
+
+
+Close.Text = "x"
+
+
+Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+
+Close.TextSize = 14.000
+
+
+Close.MouseButton1Down:connect(function()
+
+
+	main.Visible = false
+
+
+	Open.Visible = true
+
+
+end)
+
+
+
+Teleport.Name = "Teleport"
+
+
+Teleport.Parent = main
+
+
+Teleport.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+
+
+Teleport.Position = UDim2.new(0, 0, 0.0899357572, 0)
+
+
+Teleport.Size = UDim2.new(0, 264, 0, 23)
+
+
+Teleport.Font = Enum.Font.SourceSans
+
+
+Teleport.Text = "Teleport:"
+
+
+Teleport.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+
+Teleport.TextSize = 14.000
+
+
+
+Spawn.Name = "Spawn"
+
+
+Spawn.Parent = main
+
+
+Spawn.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+
+
+Spawn.Position = UDim2.new(0.0681818202, 0, 0.149943829, 0)
+
+
+Spawn.Size = UDim2.new(0, 228, 0, 24)
+
+
+Spawn.Font = Enum.Font.SourceSans
+
+
+Spawn.Text = "Spawn"
+
+
+Spawn.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+
+Spawn.TextSize = 14.000
+
+
+Spawn.MouseButton1Down:Connect(function()
+
+
+	function teleportTO(placeCFrame)
+
+
+		local plyr = game.Players.LocalPlayer
+
+
+		if plyr.Character then
+
+
+			plyr.Character.HumanoidRootPart.CFrame = placeCFrame
+
+
+		end
+
+
+	end
+
+
+	teleportTO(game:GetService("Workspace")["__MAP"].Areas.Spawn.Part.CFrame)
+	wait(0.3)
+	teleportTO(game:GetService("Workspace")["__MAP"].Areas.Spawn.Part.CFrame)
+
+
+end)
+
+
+
+Town.Name = "Town"
+
+
+Town.Parent = main
+
+
+Town.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+
+
+Town.Position = UDim2.new(0.0681818202, 0, 0.209731638, 0)
+
+
+Town.Size = UDim2.new(0, 228, 0, 24)
+
+
+Town.Font = Enum.Font.SourceSans
+
+
+Town.Text = "Town"
+
+
+Town.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+
+Town.TextSize = 14.000
+
+
+Town.MouseButton1Down:Connect(function()
+
+
+	function teleportTO(placeCFrame)
+
+
+		local plyr = game.Players.LocalPlayer
+
+
+		if plyr.Character then
+
+
+			plyr.Character.HumanoidRootPart.CFrame = placeCFrame
+
+
+		end
+
+
+	end
+
+
+	teleportTO(game:GetService("Workspace")["__MAP"].Areas.Town.Ground.CFrame)
+	wait(0.3)
+	teleportTO(game:GetService("Workspace")["__MAP"].Areas.Town.Ground.CFrame)
+
+
+end)
+
+
+
+Forest.Name = "Forest"
+
+
+Forest.Parent = main
+
+
+Forest.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+
+
+Forest.Position = UDim2.new(0.0681818202, 0, 0.273685068, 0)
+
+
+Forest.Size = UDim2.new(0, 228, 0, 24)
+
+
+Forest.Font = Enum.Font.SourceSans
+
+
+Forest.Text = "Forest"
+
+
+Forest.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+
+Forest.TextSize = 14.000
+
+
+Forest.MouseButton1Down:Connect(function()
+
+
+	function teleportTO(placeCFrame)
+
+
+		local plyr = game.Players.LocalPlayer
+
+
+		if plyr.Character then
+
+
+			plyr.Character.HumanoidRootPart.CFrame = placeCFrame
+
+
+		end
+
+
+	end
+
+
+	teleportTO(game:GetService("Workspace")["__MAP"].Areas.Forest.Ground.CFrame)
+	wait(0.3)
+	teleportTO(game:GetService("Workspace")["__MAP"].Areas.Forest.Ground.CFrame)
+
+
+end)
+
+
+
+Mine.Name = "Mine"
+
+
+Mine.Parent = main
+
+
+Mine.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+
+
+Mine.Position = UDim2.new(0.0681818202, 0, 0.337337404, 0)
+
+
+Mine.Size = UDim2.new(0, 228, 0, 24)
+
+
+Mine.Font = Enum.Font.SourceSans
+
+
+Mine.Text = "Mine"
+
+
+Mine.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+
+Mine.TextSize = 14.000
+
+
+Mine.MouseButton1Down:Connect(function()
+
+
+	function teleportTO(placeCFrame)
+
+
+		local plyr = game.Players.LocalPlayer
+
+
+		if plyr.Character then
+
+
+			plyr.Character.HumanoidRootPart.CFrame = placeCFrame
+
+
+		end
+
+
+	end
+
+
+	teleportTO(game:GetService("Workspace")["__MAP"].Areas.Mine.Ground.CFrame)
+	wait(0.3)
+	teleportTO(game:GetService("Workspace")["__MAP"].Areas.Mine.Ground.CFrame)
+
+
+end)
+
+
+
+Beach.Name = "Beach"
+
+
+Beach.Parent = main
+
+
+Beach.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+
+
+Beach.Position = UDim2.new(0.0681818202, 0, 0.405627608, 0)
+
+
+Beach.Size = UDim2.new(0, 228, 0, 24)
+
+
+Beach.Font = Enum.Font.SourceSans
+
+
+Beach.Text = "Beach"
+
+
+Beach.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+
+Beach.TextSize = 14.000
+
+
+Beach.MouseButton1Down:Connect(function()
+
+
+	function teleportTO(placeCFrame)
+
+
+		local plyr = game.Players.LocalPlayer
+
+
+		if plyr.Character then
+
+
+			plyr.Character.HumanoidRootPart.CFrame = placeCFrame
+
+
+		end
+
+
+	end
+
+
+	teleportTO(game:GetService("Workspace")["__MAP"].Areas.Beach.Part.CFrame)
+	wait(0.3)
+	teleportTO(game:GetService("Workspace")["__MAP"].Areas.Beach.Part.CFrame)
+
+
+end)
+
+
+
+Winter.Name = "Winter"
+
+
+Winter.Parent = main
+
+
+Winter.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+
+
+Winter.Position = UDim2.new(0.0681818202, 0, 0.478207499, 0)
+
+
+Winter.Size = UDim2.new(0, 228, 0, 24)
+
+
+Winter.Font = Enum.Font.SourceSans
+
+
+Winter.Text = "Winter"
+
+
+Winter.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+
+Winter.TextSize = 14.000
+
+
+Winter.MouseButton1Down:Connect(function()
+
+
+	function teleportTO(placeCFrame)
+
+
+		local plyr = game.Players.LocalPlayer
+
+
+		if plyr.Character then
+
+
+			plyr.Character.HumanoidRootPart.CFrame = placeCFrame
+
+
+		end
+
+
+	end
+
+
+	teleportTO(game:GetService("Workspace")["__MAP"].Areas.Winter.Ground.CFrame)
+	wait(0.3)
+	teleportTO(game:GetService("Workspace")["__MAP"].Areas.Winter.Ground.CFrame)
+
+
+end)
+
+
+
+Shop.Name = "Shop"
+
+
+Shop.Parent = main
+
+
+Shop.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+
+
+Shop.Position = UDim2.new(0.0681818202, 0, 0.545490324, 0)
+
+
+Shop.Size = UDim2.new(0, 228, 0, 24)
+
+
+Shop.Font = Enum.Font.SourceSans
+
+
+Shop.Text = "Shop"
+
+
+Shop.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+
+Shop.TextSize = 14.000
+
+
+Shop.MouseButton1Down:Connect(function()
+
+
+	function teleportTO(placeCFrame)
+
+
+		local plyr = game.Players.LocalPlayer
+
+
+		if plyr.Character then
+
+
+			plyr.Character.HumanoidRootPart.CFrame = placeCFrame
+
+
+		end
+
+
+	end
+
+
+	teleportTO(game:GetService("Workspace")["__MAP"].Areas.Shop.Part.CFrame)
+	wait(0.3)
+	teleportTO(game:GetService("Workspace")["__MAP"].Areas.Shop.Part.CFrame)
+
+
+end)
+
+
+
+
+Glacier.Name = "Glacier"
+
+
+Glacier.Parent = main
+
+
+Glacier.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+
+
+Glacier.Position = UDim2.new(0.0681818202, 0, 0.611560047, 0)
+
+
+Glacier.Size = UDim2.new(0, 228, 0, 24)
+
+
+Glacier.Font = Enum.Font.SourceSans
+
+
+Glacier.Text = "Glacier"
+
+
+Glacier.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+
+Glacier.TextSize = 14.000
+
+
+Glacier.MouseButton1Down:Connect(function()
+
+
+	function teleportTO(placeCFrame)
+
+
+		local plyr = game.Players.LocalPlayer
+
+
+		if plyr.Character then
+
+
+			plyr.Character.HumanoidRootPart.CFrame = placeCFrame
+
+
+		end
+
+
+	end
+
+
+	teleportTO(game:GetService("Workspace")["__MAP"].Areas.Glacier.Ground.CFrame)
+	wait(0.3)
+	teleportTO(game:GetService("Workspace")["__MAP"].Areas.Glacier.Ground.CFrame)
+
+
+end)
+
+
+
+Desert.Name = "Desert"
+
+
+Desert.Parent = main
+
+
+Desert.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+
+
+Desert.Position = UDim2.new(0.0681818202, 0, 0.673777342, 0)
+
+
+Desert.Size = UDim2.new(0, 228, 0, 24)
+
+
+Desert.Font = Enum.Font.SourceSans
+
+
+Desert.Text = "Desert"
+
+
+Desert.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+
+Desert.TextSize = 14.000
+
+
+Desert.MouseButton1Down:Connect(function()
+
+
+	function teleportTO(placeCFrame)
+
+
+		local plyr = game.Players.LocalPlayer
+
+
+		if plyr.Character then
+
+
+			plyr.Character.HumanoidRootPart.CFrame = placeCFrame
+
+
+		end
+
+
+	end
+
+
+	teleportTO(game:GetService("Workspace")["__MAP"].Areas.Desert.Ground.CFrame)
+	wait(0.3)
+	teleportTO(game:GetService("Workspace")["__MAP"].Areas.Desert.Ground.CFrame)
+
+
+end)
+
+
+
+Volcano.Name = "Volcano"
+
+
+Volcano.Parent = main
+
+
+Volcano.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+
+
+Volcano.Position = UDim2.new(0.0681818202, 0, 0.736073852, 0)
+
+
+Volcano.Size = UDim2.new(0, 228, 0, 24)
+
+
+Volcano.Font = Enum.Font.SourceSans
+
+
+Volcano.Text = "Volcano"
+
+
+Volcano.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+
+Volcano.TextSize = 14.000
+
+
+Volcano.MouseButton1Down:Connect(function()
+
+
+	function teleportTO(placeCFrame)
+
+
+		local plyr = game.Players.LocalPlayer
+
+
+		if plyr.Character then
+
+
+			plyr.Character.HumanoidRootPart.CFrame = placeCFrame
+
+
+		end
+
+
+	end
+
+
+	teleportTO(game:GetService("Workspace")["__MAP"].Areas.Volcano.Platform.Stairs.Part.CFrame)
+	wait(0.3)
+	teleportTO(game:GetService("Workspace")["__MAP"].Areas.Volcano.Platform.Stairs.Part.CFrame)
+
+
+end)
+
+
+
+Tech.Name = "Tech"
+
+
+Tech.Parent = main
+
+
+Tech.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+
+
+Tech.Position = UDim2.new(0.0681818202, 0, 0.808080554, 0)
+
+
+Tech.Size = UDim2.new(0, 228, 0, 24)
+
+
+Tech.Font = Enum.Font.SourceSans
+
+
+Tech.Text = "Tech"
+
+
+Tech.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+
+Tech.TextSize = 14.000
+
+
+Tech.MouseButton1Down:Connect(function()
+
+
+	function teleportTO(placeCFrame)
+
+
+		local plyr = game.Players.LocalPlayer
+
+
+		if plyr.Character then
+
+
+			plyr.Character.HumanoidRootPart.CFrame = placeCFrame
+
+
+		end
+
+
+	end
+
+
+	teleportTO(game:GetService("Workspace")["__MAP"].Areas.Tech.Part.CFrame)
+	wait(0.3)
+	teleportTO(game:GetService("Workspace")["__MAP"].Areas.Tech.Part.CFrame)
+
+
+end)
+
+
+
+Cave.Name = "Cave"
+
+
+Cave.Parent = main
+
+
+Cave.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+
+
+Cave.Position = UDim2.new(0.0681818202, 0, 0.872298658, 0)
+
+
+Cave.Size = UDim2.new(0, 228, 0, 24)
+
+
+Cave.Font = Enum.Font.SourceSans
+
+
+Cave.Text = "Cave"
+
+
+Cave.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+
+Cave.TextSize = 14.000
+
+
+Cave.MouseButton1Down:Connect(function()
+
+
+	function teleportTO(placeCFrame)
+
+
+		local plyr = game.Players.LocalPlayer
+
+
+		if plyr.Character then
+
+
+			plyr.Character.HumanoidRootPart.CFrame = placeCFrame
+
+
+		end
+
+
+	end
+
+
+	teleportTO(game:GetService("Workspace")["__MAP"].Areas.Cave.Ground.CFrame)
+	wait(0.3)
+	teleportTO(game:GetService("Workspace")["__MAP"].Areas.Cave.Ground.CFrame)
+
+
+end)
+
+
+
+Vip.Name = "Vip"
+
+
+Vip.Parent = main
+
+
+Vip.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+
+
+Vip.Position = UDim2.new(0.0681818202, 0, 0.933062553, 0)
+
+
+Vip.Size = UDim2.new(0, 228, 0, 24)
+
+
+Vip.Font = Enum.Font.SourceSans
+
+
+Vip.Text = "Vip"
+
+
+Vip.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+
+Vip.TextSize = 14.000
+
+
+Vip.MouseButton1Down:Connect(function()
+
+
+	function teleportTO(placeCFrame)
+
+
+		local plyr = game.Players.LocalPlayer
+
+
+		if plyr.Character then
+
+
+			plyr.Character.HumanoidRootPart.CFrame = placeCFrame
+
+
+		end
+
+
+	end
+
+
+	teleportTO(game:GetService("Workspace")["__MAP"].Areas.VIP.Ground.CFrame)
+	wait(0.3)
+	teleportTO(game:GetService("Workspace")["__MAP"].Areas.VIP.Ground.CFrame)
+
+
+end)
+
+
+
+Open.Name = "Open"
+
+
+Open.Parent = ScreenGui
+
+
+Open.BackgroundColor3 = Color3.fromRGB(84, 84, 84)
+
+
+Open.Position = UDim2.new(0.798957586, 0, 0.169325158, 0)
+
+
+Open.Size = UDim2.new(0, 97, 0, 26)
+
+
+Open.Font = Enum.Font.Ubuntu
+
+
+Open.Text = "Open"
+
+
+Open.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+
+Open.TextSize = 14.000
+
+
+Open.Visible = false
+
+
+Open.MouseButton1Down:Connect(function()
+
+
+	main.Visible = true
+
+
+	Open.Visible = false
+
+
+end)
